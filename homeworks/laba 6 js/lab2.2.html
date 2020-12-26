@@ -1,0 +1,20 @@
+<html>
+<body>
+	<script>
+		let arr=new Array(10);
+		a='';
+		for(i=0;i<arr.length;i++)
+		{
+			x=Math.random()*10-5;
+			arr[i]=Math.floor(x);
+			a += ' '+arr[i];
+		}
+		alert(a);
+
+		for(i=0;i<arr.length;i++)
+		{
+			if(arr[i]==0) alert('arr['+i+'] = '+arr[i]);
+		}
+	</script>
+</body>
+</html>

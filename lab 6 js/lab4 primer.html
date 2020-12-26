@@ -1,0 +1,45 @@
+<html>
+    <head>
+        <script type="text/javascript">
+        function rub()
+        {
+            st=prompt('enter the number');n=parseInt(st);
+            cp=n%10;
+            c1=n/10;c1=Math.round(c1);cpp=c1%10;
+            g1='<head><style>body {background-color:';
+            g3='}h3{color:';
+            g5='}</style></head>';
+            s1='<body><h3>'+n;
+            s3='</h3></body>';
+            if(cp==1 && cpp!=1)
+            {
+                s2='rubl';g2='black';g4='white';
+            }
+            else
+            {
+                if(cp>=2&&cp<=4&&cpp!=1)
+                {
+                    s2='rublya';g2='blue';g4='navy';
+                }
+                else
+                {
+                    s2='rublei';g2='pink';g4='grey';
+                }
+            }
+            g=g1+g2+g3+g4+g5;
+            s=s1+s2+s3;
+
+            w=window.open("","","width=200,height=200");
+            w.document.open();
+            w.document.write(g);
+            w.document.write(s);
+            w.document.close();
+}
+        </script>
+    </head>
+    <body>
+        <input type='button' value='START' onclick='rub()'>
+        <input type='button' value='CLOSE' onclick='w.close()'>
+
+    </body>
+</html>

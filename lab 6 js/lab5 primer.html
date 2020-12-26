@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<script type="text/javascript">
+		function fk()
+		{
+			st1=prompt('A=');a=parseInt(st1);
+			st2=prompt('B=');b=parseInt(st2);
+			L1=st1.length;L2=st2.length;
+			p1=isNaN(st1);p2=isNaN(st2);
+
+			if(L1==3 && L2==1 && p1==false && p2==false)
+			{
+				if(a%b==0) st='YES';
+				else st='NOT';
+			}
+			else
+			{
+				st='ERROR';
+			}
+			ob=document.getElementById('px');
+			ob.value=st;
+		}
+	</script>
+</head>
+<body onload="fk();">
+	<input type='text' id='px'>
+</body>
+</html>

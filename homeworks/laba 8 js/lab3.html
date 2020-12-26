@@ -1,0 +1,23 @@
+<html>
+<head>
+	<script type="text/javascript">
+function funk()
+{
+	var t=document.getElementsByTagName('input');
+	for(var i=0;i<t.length;i++)
+	{
+		t[i].checked=true;
+	}
+}
+	</script>
+</head>
+<body>
+	<input type="checkbox" />NewYork<br>
+	<input type="checkbox" />London<br>
+	<input type="checkbox" />Almaty<br>
+	<input type="checkbox" />Tokyo<br>
+	<input type="checkbox" />Paris<br>
+
+	<button onclick="funk()">CLICK</button>
+</body>
+</html>

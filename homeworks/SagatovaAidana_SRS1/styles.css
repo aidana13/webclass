@@ -1,0 +1,54 @@
+.navbar a {
+  float: left;
+  color: #000000;
+  text-align: center;
+  padding: 15px 20px;
+  text-decoration: none;
+  font-size: 20px;
+}
+.navbar a:hover {
+  background-color: #C0C0C0;
+  color: black;
+}
+.navbar a:active {
+  background-color: #A9A9A9;
+  color: black;
+}
+.menu a {
+  float: left;
+  color: white;
+  text-align: center;
+  text-decoration: none;
+  font-size: 20px;
+}
+.menu a:hover {
+  color: grey;
+}
+.menu a:visited {
+  color: red;
+}
+.menu a:active {
+  background-color: #A9A9A9;
+  color: white;
+}
+.container{
+  text-align: justify;
+  padding: 50px 50px;
+  background-color: #DCDCDC;
+}
+.image {
+  position  : relative;
+  width   : 100%;
+}
+h1 {
+  position  : absolute;
+  top   : 200px;
+  width   : 100%;
+  font: small-caps bold 40pt 'Arial', serif; 
+  color: white;
+  background    : rgba(0, 0, 0, 0.7);
+}
+footer {
+  padding: 30px;
+  background: grey;
+}

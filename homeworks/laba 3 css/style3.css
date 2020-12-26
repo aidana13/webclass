@@ -1,0 +1,16 @@
+#mybody{
+	background: lightblue;
+	text-align:center;
+}
+#quote1{
+	font: bold 30pt 'Georgia', serif; 
+	color: green;
+}
+#area1 {
+	font: bold 30pt 'Georgia', serif; 
+	color: purple;
+	margin-left: 5px;
+}
+#image1 { 
+    float: left; 
+}

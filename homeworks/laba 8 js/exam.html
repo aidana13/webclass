@@ -1,0 +1,30 @@
+<html>
+<head>
+	<script type="text/javascript">
+function funk()
+{
+	document.getElementById('res1').checked=true;
+	document.getElementById('res2').checked=true;
+	document.getElementById('res3').checked=true;
+	document.getElementById('res4').checked=true;
+	document.getElementById('res5').checked=true;
+
+	/*var t=document.getElementsByTagName('input');
+	for(var i=0;i<t.length;i++)
+	{
+		t[i].checked=true;
+		//console.log(t[i]);
+	}*/
+}
+	</script>
+</head>
+<body>
+	<input type="checkbox" id="res1" onchange="funk()"/>NewYork<br>
+	<input type="checkbox" id="res2" />London<br>
+	<input type="checkbox" id="res3" onchange="funk()"/>Almaty<br>
+	<input type="checkbox" id="res4" onchange="funk()"/>Tokyo<br>
+	<input type="checkbox" id="res5" onchange="funk()"/>Paris<br>
+
+	<button >CLICK</button>
+</body>
+</html>

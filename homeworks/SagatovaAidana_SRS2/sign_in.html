@@ -1,0 +1,64 @@
+<html>
+    <head>
+        <title>Мебельная фабрика</title>
+        <link rel="stylesheet" type="text/css" href="styles.css">
+        <link rel="stylesheet" type="text/css" href="signInStyle.css">
+        <style>
+        </style>
+        <script type="text/javascript">
+            users = [
+            {login:"aidana", password: "qwerty"},
+            {login:"dinara", password: "qwerty"},
+            {login:"ayagul", password: "qwerty"},
+            {login:"darya", password: "qwerty"}
+            ];
+
+            function signIn()
+            {
+                login = document.getElementById("login");
+                password = document.getElementById("password");
+
+                found = false;
+                polzovatel = "";
+
+                for(i=0;i<users.length;i++)
+                {
+                    if(users[i].login==login.value&&users[i].password==password.value)
+                    {
+                        found = true;
+                        polzovatel = users[i];
+                    }
+                }
+                if(found)
+                {
+                    alert("Подтвердите ваши действия на нашей странице");
+                }
+                else{
+                    login.style = "border:red solid 1px";
+                    password.style = "border:red solid 1px";
+                }
+            }
+        </script>
+    </head>
+    <body bgcolor=#ffffff text=#8B4513>
+        <div class="container" align="center">
+            <h2>Вход</h2>
+            <br>
+            <label for="email"><b>Логин</b></label>
+            <input type="text" id="login" placeholder="Enter email address" name="email" required>
+            <br>
+            <label for="psw"><b>Пароль</b></label>
+            <input type="password" id="password" placeholder="Enter Password" name="password" required><br>
+            <button type="submit" onclick="signIn()">Войти</button>
+            <br><br>
+            <b>Если у вас нет аккаунта, то вы можете<b> <a href="sign_up.html" target="2">Зарегистрироваться</a>
+                <br><br><br>
+            </div>
+        <footer>
+            <div align=center>
+                <div class="pull-right hidden-xs">Developed by <b>SagatovaAIDANA</b></div>
+                <strong>Copyright © 2020 KazNU, IT.</strong> All rights reserved.
+            </div>
+        </footer>
+    </body>
+</html>

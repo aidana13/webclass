@@ -1,0 +1,10 @@
+.container{
+	text-align:center;
+	line-height: 100%;
+}
+blockquote.container {
+	font-weight: bold;
+	font-size: 30px;		
+	text-align: left;
+	color:black;	
+}

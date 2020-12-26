@@ -1,0 +1,26 @@
+<html>
+<head>
+	<script type="text/javascript">
+function funk()
+{
+	var text=document.getElementsByTagName("h1");
+	for(var i=0;i<text.length;i++)
+	{
+		var t=text[i].innerHTML;
+		text[i].innerHTML = '<img src="london.jpg" width="150px" height="200px">'+'<br>'+t;
+	}
+}
+	</script>
+</head>
+<body>
+	<div id="result"></div>
+	<h1>Заголовок 1</h1>
+	<p>Текст абзаца 1</p>
+	<p>Текст абзаца 2</p>
+	<div id="result"></div>
+	<h1>Заголовок 2</h1>
+	<p>Текст абзаца 3</p>
+	<p>Текст абзаца 4</p>
+	<input type="button" value="CLICK" id="btn" onclick="funk()">
+</body>
+</html>

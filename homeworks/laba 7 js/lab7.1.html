@@ -1,0 +1,27 @@
+<html>
+<head>
+	<style>
+	    img{
+	    	width: 200;
+	    	height: 270;
+	    }
+	</style>
+	<script type="text/javascript">
+		function doEvent(type)
+		{
+			var a=document.getElementById('pic');
+			if(type) {
+				a.style="border: 3px solid #0000ff;";
+			}
+			else {
+				a.style="border: 0;";
+			}
+		}
+	</script>
+</head>
+<body bgcolor=#dfd8c5>
+	<h1>Лабораторная работа №7</h1>
+	<p>Задание 1</p>
+	<img id="pic" style="border: 0" src="london.jpg" onMouseOver="doEvent(true);" onMouseOut="doEvent(false);" />
+</body>
+</html>

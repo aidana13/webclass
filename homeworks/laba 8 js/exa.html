@@ -1,0 +1,22 @@
+<html>
+<head>
+	<script type="text/javascript">
+function funk()
+{
+	var r=document.getElementById("rez");
+	ch=r.value;
+	ch=parseInt(ch);
+	var p=document.getElementsByTagName('li');
+	p[ch-1].style.color="red";
+}
+	</script>
+</head>
+<body>
+	<ol>
+		<li></li>
+		<li></li>
+		<li></li>
+	</ol>
+	<input type="text" id="rez" onchange="funk()">
+</body>
+</html>

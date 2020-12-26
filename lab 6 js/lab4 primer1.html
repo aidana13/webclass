@@ -1,0 +1,30 @@
+<html>
+<body>
+<script>       
+            st=prompt('enter the number');n=parseInt(st);
+            cp=n%10;
+            c1=n/10;c1=Math.round(c1);cpp=c1%10;
+            
+            s1='<body><h3>'+n
+            s3='</h3></body>'
+            if(cp==1 && cpp!=1)
+            {
+                s2='rubl'
+            }
+            else
+            {
+                if(cp>=2&&cp<=4&&cpp!=1)
+                {
+                    s2='rublya'
+                }
+                else
+                {
+                    s2='rublei'
+                }
+            }
+            s=s1+s2+s3
+
+            document.write(s);
+        </script>
+    </body>
+</html>

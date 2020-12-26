@@ -1,0 +1,28 @@
+<html>
+<head>    
+	<style>
+        #im2 {position:absolute;left:0;bottom:0;}
+    </style>
+</head>
+<body>
+        <img src="garden.jpg" id='im1' width=50%>
+        <img src="butterfly.gif" id='im2' width=10%>
+    <script>    
+    	function f()
+    	{
+            x+=10;
+            r2.style.bottom=x;
+            if(x<x1-x2) 
+           	{
+          		setTimeout(f,100);
+           	}    
+        }
+        x=0;
+        r1=document.getElementById('im1');
+        r2=document.getElementById('im2');
+        x1=r1.width;
+        x2=r2.width;    
+        f();
+    </script>
+</body>
+</html>

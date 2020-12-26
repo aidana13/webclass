@@ -1,0 +1,84 @@
+<html>
+    <head>
+        <title>Мебельная фабрика</title>
+        <link rel="stylesheet" type="text/css" href="styles.css">
+        <link rel="stylesheet" type="text/css" href="signUpStyle.css">
+        <style>   
+        </style>
+        <script type="text/javascript">
+            function signUp()
+            {
+            w=window.open("","","width=400,height=200");
+            w.document.open();
+            
+            name = document.getElementById("name").value;
+            surname = document.getElementById("surname").value;
+            fname = document.getElementById("fname").value;
+            
+            g1='<body bgcolor=yellow text=red align=center><h3>Добро пожаловать ';
+            g2='!</h3></body>';
+
+            w.document.write(g1+name+' '+surname+' '+fname+'!'+g2);
+            w.document.close();
+        }                
+        </script>
+    </head>
+    <body bgcolor=#ffffff text=#8B4513>
+        <div class="container">
+            <h2>Регистрация</h2>
+            <table>
+                <tr>
+                    <td><i>Имя:</i></td>
+                    <td><input type="text" id="name" size=20 maxlength=20></td>
+                </tr>
+                <tr>
+                    <td><i>Фамилия:</i></td>
+                    <td><input type="text" id="surname" size=20 maxlength=20></td>
+                </tr>
+                <tr>
+                    <td><i>Отчество:</i></td>
+                    <td><input type="text" id="fname" size=20 maxlength=20></td>
+                </tr>
+                <tr>
+                    <td><i>Город:</i></td>
+                    <td>
+                        <select id="city">
+                            <option>Алматы</option>
+                            <option>Астана</option>
+                            <option>Шымкент</option>
+                            <option>Уральск</option>
+                            <option>Актобе</option>
+                        </select>
+                    </td>
+                </tr>
+                <tr>
+                    <td><i>Пол:</i></td>
+                    <td><input type="radio" name="male"> Женский<input type="radio" name="female">Мужской</td>
+                </tr>
+                <tr>
+                    <td><i>Дата рождения:</i></td>
+                    <td><input type="date" id="date"></td>
+                </tr>
+                <tr>
+                    <td><i>Эл. адрес:</i></td>
+                    <td><input type="email" id="login" name="email" size="20" maxlength="25"></td>
+                </tr>
+                <tr>
+                    <td><i>Пароль:</i></td>
+                    <td><input type="password" id="password" name="secret word" size="20" maxlength="20"></td>
+                </tr>
+                <br><br>
+                <tr>
+                    <td></td><td><button type="submit" onclick="signUp()">Зарегистрироваться</button></td>
+                </tr>
+            </table>
+            <a href="sign_in.html" target="2"><h3>назад</h3></a>
+        </div>
+        <footer>
+            <div align=center>
+                <div class="pull-right hidden-xs">Developed by <b>SagatovaAIDANA</b></div>
+                <strong>Copyright © 2020 KazNU, IT.</strong> All rights reserved.
+            </div>
+        </footer>
+    </body>
+</html>

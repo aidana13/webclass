@@ -1,0 +1,31 @@
+<html>
+   <head>
+      <script type="text/javascript">
+      	function changePic(){
+      		if(document.getElementById("btn").value=="Спрятать")
+      		{
+      			document.getElementById("picture").src = " ";
+      			document.getElementById("btn").value = "Показать";
+      		}
+      		else{
+      			document.getElementById("picture").src = "london.jpg";
+      			document.getElementById("btn").value = "Спрятать";	
+      		}
+      	}
+      </script>
+   </head>
+   <body>
+   	<body bgcolor="yellow">
+	<h1>Лабораторная работа №7</h1>
+	<p>Задание 2</p>
+	<table>
+		<tr>
+			<td>
+				<img src="london.jpg" style="width:150px;height:200px;" id = "picture" width = "300px" height="200px">
+			</td>
+			<td>
+				<input type="button" id="btn" value="Спрятать" style="width:150px;height:200px;" onclick="changePic()">
+			</td>
+		</tr>
+	</table>
+</body>

@@ -1,0 +1,57 @@
+<html>
+    <head>
+        <title>Контакты</title>
+        <link rel="stylesheet" type="text/css" href="styles.css">
+    </head>
+    <body text=#8B4513>
+        <script type="text/javascript">
+        function doEvent(type)
+        {
+            var a=document.getElementById('add');
+            if(type) {
+                a.style="font-weight:bold;color:blue;";
+            }
+            else {
+                a.style=" ";
+            }
+        }
+        function tel1(type)
+        {
+            var x=document.getElementById('i1');
+            var y=document.getElementById('i2');
+            var z=document.getElementById('i3');
+            if(type) {
+                x.style="font-weight:bold;color:blue;";
+                y.style="font-weight:bold;color:blue;";
+                z.style="font-weight:bold;color:blue;";
+            }
+            else {
+                x.style=" ";
+                y.style=" ";
+                z.style=" ";
+            }
+        }
+    </script>
+        <div class="container">
+            <b  onMouseOver="tel1(true);" onMouseOut="tel1(false);">Наши контакты:</b><br><br>
+            <i id="i1">+7 (707) 910-03-50</i><br>
+            <i id="i2">+7 (708) 900-33-05</i><br>
+            <i id="i3">+7 (702) 109-30-55</i><br>
+            <address id="add" onMouseOver="doEvent(true);" onMouseOut="doEvent(false);">mebel_factury@google.kz</address>
+            <br><br>
+            <b>Наш адрес:</b><br><br>
+            <em>Казахстан, 050005, г. Алматы, пр. Толе би, 271</em>
+            <br><br><br>
+            <b>Торговые точки:</b><br>
+            <tt><h3>ТЦ «Армада», ул.Кабдоллова, 3. Ряд 7, Линия Н</h3></tt>
+            <tt><h3>ТЦ «Мерей» ул. Суюнбая, 2, Корпус «Все для дома»</h3></tt>
+            <tt><h3>ТЦ «Адэм» корпус "Мир Мебели" Северное Кольцо, 3Б, 3 этаж, слева от эскалатора</h3></tt>
+        </div>
+        <footer>
+            <div align=center>
+                <div class="pull-right hidden-xs">Developed by <b>SagatovaAIDANA</b></div>
+                <strong>Copyright © 2020 KazNU, IT.</strong> All rights reserved.
+            </div>
+        </footer>
+    </body>
+</html>

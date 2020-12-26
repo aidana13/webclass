@@ -1,0 +1,32 @@
+h1 { 
+	font: bold 40 pt 'Times New Roman’', serif; 
+	color: purple;
+}
+h2 { 
+	font: bold 35 pt 'Arial', serif; 
+	color: yellow;
+}
+h3 { 
+	font: bold 30 pt 'Georgia', serif; 
+	color: orange;
+}
+h4 { 
+	font: bold 25 pt 'Times New Roman’', serif; 
+	color: green;
+}
+h5 { 
+	font: bold 20 pt 'Arial', serif; 
+	color: red;
+}
+h6 { 
+	font: bold 15 pt 'Georgia', serif; 
+	color: blue;
+}
+p { 
+	font: bold 10 pt 'Times New Roman’', serif; 
+	color: brown;
+}
+body {
+	background: pink;
+	word-spacing: 1px
+}

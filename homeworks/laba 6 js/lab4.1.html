@@ -1,0 +1,30 @@
+<html>
+    <body>
+        <script>
+            st=prompt('Enter the number');  n=parseInt(st);
+            s1='<body><h3>'+n
+            s3='</h3></body>'
+
+            if(st.length==3 && isNaN(st)==false)
+            {
+                x=Math.trunc(n/100);
+                y=Math.trunc((n%100)/10);
+                z=Math.trunc((n%100)%10);
+                sum = x+y+z;
+
+                if(sum%2==0){
+                    s2=' = '+sum+'  //Сумма цифр четная!';
+                }
+                else{
+                    s2=' = '+sum+'  //Сумма цифp нечетная!';
+                }
+            }
+            else{
+                s2='  //Число не трехзначное!';
+            }
+
+            s=s1+s2+s3
+            document.write(s);
+        </script>
+    </body>
+</html>

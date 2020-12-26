@@ -1,0 +1,33 @@
+<html>
+<head>
+	<script type="text/javascript">
+		function number()
+		{
+			st1=prompt('A=');a=parseInt(st1);
+			st2=prompt('B=');b=parseInt(st2);
+			p1=isNaN(st1);p2=isNaN(st2);
+			if(p1==false && p2==false)
+			{
+				if(a%2==0 && b%2==0)
+				{
+					st='Оба четные!'
+				}
+				else if(a%2!=0 && b%2!=0){
+					st='Оба нечетные!';
+				}
+				else{
+					st='Одно четное!';
+				}
+			}
+			else{
+				sr='ERROR!';
+			}
+			ob=document.getElementById('px');
+			ob.value=st;
+		}
+	</script>
+</head>
+<body onload="number();">
+	<input type='text' id='px'>
+</body>
+</html>

@@ -1,0 +1,57 @@
+<html>
+    <head>
+        <script type="text/javascript">
+        function number()
+        {
+            st=prompt('Enter the number');
+            n=parseInt(st);
+
+            g1='<head><style>body {background-color:';
+            g3='}h3{text-align:';
+            g5='}</style></head>';
+            
+            s1='<body><h3>'+n
+            s3='</h3></body>'
+            
+            if(st.length==3 && isNaN(st)==false)
+            {
+                x=Math.trunc(n/100);
+                y=Math.trunc((n%100)/10);
+                z=Math.trunc((n%100)%10);
+                sum = x+y+z;
+
+                if(sum%2==0)
+                {
+                    s2='  //Сумма цифр четная!';
+                    g2='yellow';
+                    g4='right';
+                }
+                else
+                {
+                    s2='  //Сумма цифp нечетная!';
+                    g2='blue';
+                    g4='left';
+                }
+            }
+            else
+            {
+                s2='  //Число не трехзначное!';
+                g2='green';
+                g4='center';
+            }
+            g=g1+g2+g3+g4+g5;
+            s=s1+s2+s3;
+
+            w=window.open("","","width=200,height=200");
+            w.document.open();
+            w.document.write(g);
+            w.document.write(s);
+            w.document.close();
+}
+        </script>
+    </head>
+    <body>
+        <input type='button' value='START' onclick='number()'>
+        <input type='button' value='CLOSE' onclick='w.close()'>
+    </body>
+</html>

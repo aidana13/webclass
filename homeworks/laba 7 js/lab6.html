@@ -1,0 +1,100 @@
+<html>
+<head>
+	<style>td{ padding:5; }</style>
+	<script type="text/javascript">
+		function zakaz()
+		{
+			w=window.open("","","width=300,height=500");
+			w.document.open();
+			
+			ob1=document.getElementById("i1");
+			st1=ob1.value;
+			ob2=document.getElementById("i2");
+			st2=ob2.value;
+			ob3=document.getElementById("i3");
+			ob4=document.getElementById("i4");
+			if(ob3.selected) p1='blue'; else p1='green';
+			ob5=document.getElementById("i5");
+			ob6=document.getElementById("i6");
+			if(ob5.checked) p2='black'; else p2='white';
+			ob7=document.getElementById("i7");
+			ob8=document.getElementById("i8");
+			if(ob7.selected)p3='15px'; else p3='20px';
+			ob9=document.getElementById("i9");
+			ob10=document.getElementById("i10");
+			ob11=document.getElementById("i11");
+			if(ob9.checked)p4='bold'; else p4='normal';
+			if(ob10.checked)p5='italic'; else p5='normal';
+			if(ob11.checked)p6='underline'; else p6='normal';
+			ob12=document.getElementById("i12");
+			ob13=document.getElementById("i13");
+			if(ob12.checked) p7='ny.jpg'; else p7='london.jpg';
+			
+			g1='<head><style> body{background-color:';
+			g2='} h1{color:';
+			g3='} p{font-size:';
+			g4=';font-weight:';
+			g5=';font-style:';
+			g6=';text-decoration:';
+			g7='}</style></head><body><h1>';
+			g8='</h1><p>';
+			g9='</p><img src="';
+			g10='"></body>';
+
+			w.document.write(g1+p1+g2+p2+g3+p3+g4+p4+g5+p5+g6+p6+g7+st1+g8+st2+g9+p7+g10);
+			w.document.close();
+		}
+	</script>
+</head>
+<body bgcolor="aqua">
+	<h1>Лабораторная работа №6</h1>
+	<form>
+		<table>
+			<tr>
+				<td>Заголовок</td>
+				<td><input type="text" id="i1"></td>
+			</tr>
+			<tr>
+				<td>Текст</td>
+				<td><textarea cols=15 rows=5 id='i2'></textarea></td>
+			</tr>
+			<tr>
+				<td>Цвет фона</td>
+				<td>
+					<select>
+						<option id="i3">Синий</option>
+						<option id="i4">Зеленый</option>
+					</select>
+				</td>
+			</tr>
+			<tr>
+				<td>Цвет шрифта заголовка</td>
+				<td><input type="radio" name="n1" id="i5" />Черный<br>
+					<input type="radio" name="n1" id="i6" />Белый</td>
+			</tr>
+			<tr>
+				<td>Размер шрифта текста</td>
+				<td><select>
+						<option id="i7">15px</option>
+						<option id="i8">20px</option>
+				</select></td>
+			</tr>
+			<tr>
+				<td>Начертание текста</td>
+				<td><input type="checkbox" id="i9" />жирный<br>
+					<input type="checkbox" id="i10" />курсив<br>
+					<input type="checkbox" id="i11" />подчеркивание</td>
+			</tr>
+			<tr>
+				<td>Картинка</td>
+				<td><input type="radio" name="n2" id="i12" />Нью-Йорк<br>
+					<input type="radio" name="n2" id="i13" />Лондон</td>
+			</tr>
+			<tr>
+				<td><input type="button" value="Start" onclick="zakaz()"/></td>
+				<td><input type="reset" value="Reset"/></td>
+			</tr>
+		</table>
+	</form>
+</body>
+</html>

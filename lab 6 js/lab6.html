@@ -1,0 +1,107 @@
+<html>
+<head>
+	<style>
+	    td{
+	    	padding:5;
+	    }
+	</style>
+	<script type="text/javascript">
+		function zakaz()
+		{
+			w=window.open("","","width=300,height=500");
+			w.document.open();
+			
+			ob1=document.getElementById("i1");
+			st1=ob1.value;
+			ob2=document.getElementById("i2");
+			st2=ob2.value;
+			ob3=document.getElementById("i3");
+			ob4=document.getElementById("i4");
+			
+			if(ob3.checked) p1='grey'; else p1='brown';
+			
+			ob5=document.getElementById("i5");
+			ob6=document.getElementById("i6");
+			
+			if(ob5.selected) p2='Arial'; else p2='Comic Sans MS';
+			
+			ob7=document.getElementById("i7");
+			ob8=document.getElementById("i8");
+			
+			if(ob7.checked)p3='italic'; else p3='normal';
+			if(ob8.checked)p4='underline'; else p4='none';
+			
+			ob9=document.getElementById("i9");
+			ob10=document.getElementById("i10");
+			
+			if(ob9.checked)p5='1em'; else p5='2em';
+			
+			ob11=document.getElementById("i11");
+			ob12=document.getElementById("i12");
+			
+			if(ob11.selected) p6='gravity.jpg'; else p6='2.jpg';
+			
+			g1='<head><style> body{background-color:';
+			g2='} h1{font-family:';
+			g3=';font-style:';
+			g4=';text-decoration:';
+			g5='} p{line-height:';
+			g6='}</style></head><body><h1>';
+			g7='</h1><p>';
+			g8='</p><img src="';
+			g9='"></body>';
+
+			w.document.write(g1+p1+g2+p2+g3+p3+g4+p4+g5+p5+g6+st1+g7+st2+g8+p6+g9);
+			w.document.close();
+		}
+	</script>
+</head>
+<body>
+	<h1>Страничка по заказу</h1>
+	<form>
+		<table>
+			<tr>
+				<td>Заголовок</td>
+				<td><input type="text" id="i1"></td>
+			</tr>
+			<tr>
+				<td>Текст</td>
+				<td><textarea cols=15 rows=5 id='i2'></textarea></td>
+			</tr>
+			<tr>
+				<td>Фон</td>
+				<td><input type="radio" name="n1" id="i3" />Серый<br><input type="radio" name="n1" id="i4" />Коричневый</td>
+			</tr>
+			<tr>
+				<td>Шрифт заголовка</td>
+				<td>
+					<select>
+						<option id="i5">Arial</option>
+						<option id="i6">Comic Sans Ms</option>
+					</select>
+				</td>
+			<tr>
+				<td>Начертание заголовка</td>
+				<td><input type="checkbox" id="i7" />курсив<br><input type="checkbox" id="i8" />подчеркивание</td>
+			</tr>
+			<tr>
+				<td>Межстрочный интервал</td>
+				<td><input type="radio" name="n2" id="i9" />Одинарный<br><input type="radio" name="n2" id="i10" />Двойной</td>
+			</tr>
+			<tr>
+				<td>Картинка</td>
+				<td>
+					<select>
+						<option id="i11">Собака</option>
+						<option id="i12">Человек паук</option>
+					</select>
+				</td>
+			</tr>
+			<tr>
+				<td><input type="button" value="Start" onclick="zakaz()"/></td>
+				<td><input type="reset" value="Reset"/></td>
+			</tr>
+		</table>
+	</form>
+</body>
+</html>

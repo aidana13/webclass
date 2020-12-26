@@ -1,0 +1,96 @@
+<html>
+    <head>
+        <title>Мебельная фабрика</title>
+        <link rel="stylesheet" type="text/css" href="styles.css">
+        <style>
+            input[type=text], input[type=email],input[type=password],input[type=date]  {
+                width: 300px;
+                padding: 10px 10px;
+                margin: 8px 5px;
+                display: inline-block;
+                border: 1px solid #ccc;
+                box-sizing: border-box;
+                border-radius: 10px; 
+                }
+                select{
+                width: 300px;
+                padding: 10px 10px;
+                margin: 8px 5px;
+                display: inline-block;
+                border: 1px solid #ccc;
+                box-sizing: border-box;
+                border-radius: 10px;   
+                }
+                button {
+                    background-color: grey;
+                    color: white;
+                    padding: 15px 15px;
+                    margin: 8px 5px;
+                    border: none;
+                    cursor: pointer;
+                    width: 200px;
+                    }
+                button:hover {
+                    opacity: 0.8;
+                }
+        </style>
+    </head>
+    <body bgcolor=#ffffff text=black>
+        <div class="container">
+            <h2>Регистрация</h2>
+            <table>
+                <tr>
+                    <td><i>Имя:</i></td>
+                    <td><input type="text" name="Тегі" size=20 maxlength=20></td>
+                </tr>
+                <tr>
+                    <td><i>Фамилия:</i></td>
+                    <td><input type="text" name="Аты" size=20 maxlength=20></td>
+                </tr>
+                <tr>
+                    <td><i>Отчество:</i></td>
+                    <td><input type="text" name="Әкесінің аты" size=20 maxlength=20></td>
+                </tr>
+                <tr>
+                    <td><i>Город:</i></td>
+                    <td>
+                        <select>
+                            <option>Алматы</option>
+                            <option>Астана</option>
+                            <option>Шымкент</option>
+                            <option>Уральск</option>
+                            <option>Актобе</option>
+                        </select>
+                    </td>
+                </tr>
+                <tr>
+                    <td><i>Пол:</i></td>
+                    <td><input type="radio" name="male"> Женский<input type="radio" name="female">Мужской</td>
+                </tr>
+                <tr>
+                    <td><i>Дата рождения:</i></td>
+                    <td><input type="date"></td>
+                </tr>
+                <tr>
+                    <td><i>Эл. адрес:</i></td>
+                    <td><input type="email" name="email" size="20" maxlength="25"></td>
+                </tr>
+                <tr>
+                    <td><i>Пароль:</i></td>
+                    <td><input type="password" name="secret word" size="20" maxlength="20"></td>
+                </tr>
+                <br><br>
+                <tr>
+                    <td></td><td><button>Зарегистрироваться</button></td>
+                </tr>
+            </table>
+            <a href="sign_in.html" target="2"><h3>назад</h3></a>
+        </div>
+        <footer>
+            <div align=center>
+                <div class="pull-right hidden-xs">Developed by <b>SagatovaAIDANA</b></div>
+                <strong>Copyright © 2020 KazNU, IT.</strong> All rights reserved.
+            </div>
+        </footer>
+    </body>
+</html>

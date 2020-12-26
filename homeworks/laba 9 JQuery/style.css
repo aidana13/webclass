@@ -1,0 +1,27 @@
+table{
+    border:5px solid navy;
+    width:600px;
+}
+table td,th{
+	border:1px solid navy;
+}
+.s1 {
+	font-style: italic;
+	color: #AA7239;
+	background-color: #FFC080;
+}
+.s2{
+	font-style: italic;
+	background-color: #FFDFBF;
+	color:#AA7239;
+}
+.s3{
+	font-style: italic;
+	background-color:#FF8000;
+	color:#55391C;
+}
+.s4{ 
+	font-style: normal;
+	background-color:#008000;
+	color:#000000;
+}
